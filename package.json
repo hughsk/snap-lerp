@@ -1,0 +1,43 @@
+{
+  "name": "snap-lerp",
+  "version": "1.0.0",
+  "description": "Linearly interpolate two numbers, but snap to the closest value if the difference between them is small enough",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "standard && babel-node test | tap-spec"
+  },
+  "author": {
+    "name": "Hugh Kennedy",
+    "email": "hughskennedy@gmail.com",
+    "url": "http://hughsk.io/"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "babel": "^5.5.8",
+    "standard": "^5.1.0",
+    "tap-spec": "^4.0.2",
+    "tape": "^4.1.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/hughsk/snap-lerp.git"
+  },
+  "keywords": [
+    "lerp",
+    "linear",
+    "interpolation",
+    "interpolate",
+    "numbers",
+    "close",
+    "snap",
+    "lock",
+    "value",
+    "difference",
+    "small"
+  ],
+  "homepage": "https://github.com/hughsk/snap-lerp",
+  "bugs": {
+    "url": "https://github.com/hughsk/snap-lerp/issues"
+  }
+}
