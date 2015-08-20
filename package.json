@@ -1,6 +1,6 @@
 {
   "name": "snap-lerp",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Linearly interpolate two numbers, but snap to the closest value if the difference between them is small enough",
   "main": "index.js",
   "license": "MIT",
