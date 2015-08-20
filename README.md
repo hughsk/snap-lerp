@@ -13,7 +13,7 @@ approaches JS's limits in numerical precision.
 
 [![NPM](https://nodei.co/npm/snap-lerp.png)](https://nodei.co/npm/snap-lerp/)
 
-### `snapLerp(a, b, t, min)`
+### `snapLerp(a, b, t, min, [forceSnapToB])`
 
 Linearly interpolate between `a` and `b` for a given range `t`:
 
@@ -29,6 +29,17 @@ const snapLerp = require('snap-lerp')
 15 === snapLerp(10, 20, 0.50, 1)
 20 === snapLerp(10, 20, 0.50, 10)
 10 === snapLerp(10, 20, 0.49, 10)
+```
+
+If required, you may also pass `forceSnapToB` as `true` to ensure that the value
+snapped will always be the second supplied:
+
+``` javascript
+const snapLerp = require('snap-lerp')
+
+15 === snapLerp(10, 20, 0.50, 1, true)
+20 === snapLerp(10, 20, 0.50, 10, true)
+20 === snapLerp(10, 20, 0.49, 10, true)
 ```
 
 ## License
